@@ -1,0 +1,99 @@
+.logo {
+    width: 40px;
+}
+
+.navbar {
+    background-color: goldenrod;
+}
+@mixin flex(){
+    display: flex;
+        justify-content: center;
+}
+main section {
+    h1 {
+        @include flex();
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    p {
+        @include flex();
+        font-size: larger;
+        margin-bottom: 150px;
+
+
+    }
+
+    .imginicio {
+        @include flex();
+    }
+}
+
+.text-center {
+    background-color: goldenrod;
+}
+.subtitle{
+    @include flex();
+}
+
+.imgsmsp{
+    width: 400px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.padreimg{
+    @include flex();
+
+}
+.titlentros{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.img-fluid{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+@mixin mobile {
+    @media (max-width: 426px) {
+     @content;   
+    }
+    
+}
+@include mobile{
+     section{
+       h1{
+        font-size: medium
+     }
+    .subtitle{
+        font-size: small;
+    }
+     } 
+}
+@include mobile{
+    .text-center{
+font-size: small;
+    }
+}
+
+@include mobile{
+    .fontpages{
+        font-size: medium;
+    }
+    .fontmspt{
+        font-size: x-large;
+    }
+    .col-lg-6{
+        font-size: small;
+    }
+    .textpages{
+        font-size: small;
+
+    }
+    .titlentros{
+        font-size: medium;
+    }
+}
+
