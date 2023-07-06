@@ -8,6 +8,7 @@
 @mixin flex(){
     display: flex;
         justify-content: center;
+
 }
 main section {  
     h1 {
@@ -21,7 +22,7 @@ main section {
         @include flex();
         font-size: larger;
         margin-bottom: 150px;
-        
+
     }
 
     .imginicio {
@@ -60,6 +61,7 @@ main section {
      @content;   
     }
     
+
 }
 @include mobile{
      section{
@@ -68,8 +70,9 @@ main section {
      }
     .subtitle{
         font-size: small;
-    }
+     }
      } 
+
 }
 @include mobile{
     .text-center{
@@ -95,4 +98,5 @@ font-size: small;
         font-size: medium;
     }
 }
+
 
