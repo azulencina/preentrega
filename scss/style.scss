@@ -9,7 +9,7 @@
     display: flex;
         justify-content: center;
 }
-main section {
+main section {  
     h1 {
         @include flex();
         margin-top: 20px;
@@ -21,8 +21,7 @@ main section {
         @include flex();
         font-size: larger;
         margin-bottom: 150px;
-
-
+        
     }
 
     .imginicio {
