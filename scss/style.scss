@@ -1,3 +1,7 @@
+.tipografia{
+font-family: 'Archivo Narrow', sans-serif;
+}
+
 .logo {
     width: 40px;
 }
@@ -5,12 +9,14 @@
 .navbar {
     background-color: goldenrod;
 }
-@mixin flex(){
+
+@mixin flex() {
     display: flex;
-        justify-content: center;
+    justify-content: center;
 
 }
-main section {  
+
+main section {
     h1 {
         @include flex();
         margin-top: 20px;
@@ -32,71 +38,100 @@ main section {
 
 .text-center {
     background-color: goldenrod;
+    
 }
-.subtitle{
+.row{
+    padding:0%;
+}
+.col-lg-6.col-sm-12{
+    padding: 0%;
+    margin-bottom: 10px
+}
+.subtitle {
     @include flex();
+    font-size: small;
 }
 
-.imgsmsp{
+.imgsmsp {
     width: 400px;
     display: flex;
     justify-content: end;
     margin-bottom: 20px;
+    padding-right: 0%;
 }
 
-.padreimg{
+.padreimg {
     @include flex();
 
 }
-.titlentros{
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.img-fluid{
+
+
+
+.img-fluid {
     margin-top: 10px;
     margin-bottom: 40px;
 }
+.fontpages{
+    padding: 20px;
+   
+    display: flex;
+    justify-content: center;
+}
+.col-lg-6{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.iframe-fluid{
+    padding-bottom: 20px;
+    
+}
 @mixin mobile {
     @media (max-width: 426px) {
-     @content;   
+        @content;
     }
-    
+
 
 }
-@include mobile{
-     section{
-       h1{
-        font-size: medium
-     }
-    .subtitle{
+
+@include mobile {
+    section {
+        h1 {
+            font-size: medium
+        }
+
+        h2 {
+            font-size: small ;
+        }
+    }
+
+}
+
+@include mobile {
+    .text-center {
         font-size: small;
-     }
-     } 
-
-}
-@include mobile{
-    .text-center{
-font-size: small;
     }
 }
 
-@include mobile{
-    .fontpages{
+@include mobile {
+    .fontpages {
         font-size: medium;
     }
-    .fontmspt{
+
+    .fontmspt {
         font-size: x-large;
     }
-    .col-lg-6{
+
+    .col-lg-6 {
         font-size: small;
     }
-    .textpages{
+
+    .textpages {
         font-size: small;
 
     }
-    .titlentros{
+
+    .titlentros {
         font-size: medium;
     }
 }
-
-

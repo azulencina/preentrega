@@ -1,3 +1,7 @@
+.tipografia {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
 .logo {
   width: 40px;
 }
@@ -27,9 +31,19 @@ main section .imginicio {
   background-color: goldenrod;
 }
 
+.row {
+  padding: 0%;
+}
+
+.col-lg-6.col-sm-12 {
+  padding: 0%;
+  margin-bottom: 10px;
+}
+
 .subtitle {
   display: flex;
   justify-content: center;
+  font-size: small;
 }
 
 .imgsmsp {
@@ -37,6 +51,7 @@ main section .imginicio {
   display: flex;
   justify-content: end;
   margin-bottom: 20px;
+  padding-right: 0%;
 }
 
 .padreimg {
@@ -44,21 +59,31 @@ main section .imginicio {
   justify-content: center;
 }
 
-.titlentros {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
 .img-fluid {
   margin-top: 10px;
   margin-bottom: 40px;
+}
+
+.fontpages {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.col-lg-6 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.iframe-fluid {
+  padding-bottom: 20px;
 }
 
 @media (max-width: 426px) {
   section h1 {
     font-size: medium;
   }
-  section .subtitle {
+  section h2 {
     font-size: small;
   }
 }
