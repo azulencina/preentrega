@@ -40,8 +40,9 @@ main section {
     background-color: goldenrod;
     
 }
-.row{
+.row.container-fluid{
     padding:0%;
+    margin: 0%;
 }
 .col-lg-6.col-sm-12{
     padding: 0%;
@@ -78,14 +79,37 @@ main section {
     justify-content: center;
 }
 .col-lg-6{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .iframe-fluid{
     padding-bottom: 20px;
+    padding-left: 20px;
     
 }
+@mixin tablet {
+    @media (max-width: 769px) {
+        @content;
+    }
+
+
+}
+@include tablet{
+  .col-lg-6 {
+    display: flex;
+    justify-content: center;
+   }
+
+   @include tablet{
+    .iframe-fluid{
+        padding-bottom: 40px;
+    }
+   }
+}
+
+
+
 @mixin mobile {
     @media (max-width: 426px) {
         @content;
@@ -125,7 +149,9 @@ main section {
     .col-lg-6 {
         font-size: small;
     }
-
+.imgsmsp{
+    width: 300px;
+}
     .textpages {
         font-size: small;
 

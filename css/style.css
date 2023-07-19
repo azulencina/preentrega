@@ -31,8 +31,9 @@ main section .imginicio {
   background-color: goldenrod;
 }
 
-.row {
+.row.container-fluid {
   padding: 0%;
+  margin: 0%;
 }
 
 .col-lg-6.col-sm-12 {
@@ -71,14 +72,26 @@ main section .imginicio {
 }
 
 .col-lg-6 {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .iframe-fluid {
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 
+@media (max-width: 769px) {
+  .col-lg-6 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 769px) and (max-width: 769px) {
+  .iframe-fluid {
+    padding-bottom: 40px;
+  }
+}
 @media (max-width: 426px) {
   section h1 {
     font-size: medium;
@@ -101,6 +114,9 @@ main section .imginicio {
   }
   .col-lg-6 {
     font-size: small;
+  }
+  .imgsmsp {
+    width: 300px;
   }
   .textpages {
     font-size: small;
