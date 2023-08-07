@@ -10,31 +10,28 @@ else if (desicion == 'no') {
   alert('gracias por su respuesta, no recibira notificaciones sobre nosotros').toLowerCase();
 }
 
-let cursos = true;
+let respuesta = prompt('Bienvenido a Estudio Aled. ¿Desea comprar alguno de nuestros cursos?\n 1.SI. \n 2.No');
+while (respuesta != 'No') {
 
-while (cursos) {
-  let respuesta = prompt('Bienvenido a Estudio Aled. ¿Desea comprar alguno de nuestros cursos?\n\n1. Si\n2. No');
+    if (respuesta === '1') {
+        let cursoelegido = prompt('Seleccione el curso que desea comprar\n\n1. microblading\n2. maquillaje semipermanente');
+        if (cursoelegido === '1') {
+            alert('Has elegido comprar microblading');
+        } else if (cursoelegido === '2') {
+            alert('Has elegido comprar maquillaje semipermanente');
+        } else {
+            alert('Curso no válido. Por favor, seleccione uno de los cursos disponibles.');
+        }
+    } 
+     respuesta = prompt('¿Desea comprar otro de nuestros cursos?\n 1.SI. \n 2.No ');}
 
-  if (respuesta === '1') {
-    let cursoelegido = prompt('Seleccione el curso que desea comprar\n\n1. microblading\n2. maquillaje semipermanente');
-    if (cursoelegido === '1') {
-      alert('Has elegido comprar microblading');
-      cursos = false;
-    } else if (cursoelegido === '2') {
-      alert('Has elegido comprar maquillaje semipermanente');
-      cursos = false;
-    } else {
-      alert('Curso no válido. Por favor, seleccione uno de los cursos disponibles.');
-    }
-  } else if (respuesta === '2') {
-    cursos = false;
-    alert('Gracias por visitarnos. ¡Hasta luego!');
-  } else {
-    alert('Opción no válida. Por favor, seleccione 1 o 2.');
-  }
+
+if (cursos == '1') {
+    alert('redirigir')
 }
-
-
+else if (cursos == '2') {
+    alert('gracias por su compra');
+}
  
 
 
