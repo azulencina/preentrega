@@ -11,7 +11,7 @@ else if (desicion == 'no') {
 }
 
 let respuesta = prompt('Bienvenido a Estudio Aled. ¿Desea comprar alguno de nuestros cursos?\n 1.SI. \n 2.No');
-while (respuesta != 'No') {
+while (respuesta != '2') {
 
     if (respuesta === '1') {
         let cursoelegido = prompt('Seleccione el curso que desea comprar\n\n1. microblading\n2. maquillaje semipermanente');
